@@ -1,0 +1,68 @@
+{% extends 'home/base.html' %}
+
+{% block title %} AI Business {% endblock %}
+
+{% block content %}
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Scalable, Efficient, Secure AI Solutions</h1>
+          <h2>Leveraging GenAI & Retrieval Augmented Generation (RAG)</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="/" class="btn-get-started scrollto">Information</a>
+
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        {% load static %}
+          <img src="{% static '/assets/img/scrum.svg' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-app-indicator" style="font-size: 50px;"></i>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-chat-quote-fill" style="font-size: 50px;"></i>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-bar-chart-steps" style="font-size: 50px;"></i>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-bricks" style="font-size: 50px;"></i>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-cpu" style="font-size: 50px;"></i>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <i class="bi bi-file-earmark-medical" style="font-size: 50px;"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+
+{% endblock %}

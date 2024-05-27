@@ -1,0 +1,4 @@
+stanza
+django
+python-dotenv
+# Run once if needed: stanza.download('en') # download English model
