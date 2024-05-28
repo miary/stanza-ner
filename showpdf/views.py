@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'ner/index.html')
+    return render(request, 'showpdf/index.html')
+
