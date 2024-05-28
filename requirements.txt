@@ -1,4 +1,6 @@
 stanza
 django
 python-dotenv
+pdf2image
+
 # Run once if needed: stanza.download('en') # download English model
