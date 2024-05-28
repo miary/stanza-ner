@@ -61,13 +61,16 @@
     </nav>
 
 
-
+    {% if data %}
 	<div class="container mt-5">
 		<div class="row">
 			<div class="col-md-2 bg-light border">
-				<h4 class="text-center">DOCUMENTS</h4>
-                <object data='/media/1040a.pdf' height='200px'></object>
+				<h4 class="text-center">Documents</h4>
+                {% for item in data %} 
+                    <p>{{ item }} 
+                {% endfor %}
 			</div>
+            
 			<div class="col-md-10 bg-light border">
 				<h4 class="text-center">Column 2</h4>
 				CSS or Cascading Style Sheets is a stylesheet
@@ -77,6 +80,15 @@
 			</div>
 		</div>
 	</div>
+
+    {% else %}
+    <div class="container mt-5">
+        <h2>Anonymize List of PDF files: <a href="/show/page1/">Start</a></h2>
+    </div>
+
+    {% endif %}
+
+
 </body>
 
 </html>

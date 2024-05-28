@@ -9,3 +9,4 @@ models/
 .myenv
 Code/
 db.sqlite3
+tmp/
