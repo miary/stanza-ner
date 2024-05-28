@@ -64,19 +64,16 @@
     {% if data %}
 	<div class="container mt-5">
 		<div class="row">
-			<div class="col-md-2 bg-light border">
-				<h4 class="text-center">Documents</h4>
+			<div class="col-md-1 bg-light border">
                 {% for item in data %} 
-                    <p>{{ item }} 
+                    <p><a href="#" class="thumbnail-preview" data-image="/media/tmp/{{ item }}" width="110px" onclick="showImage(event)">{{ item }}</a></p>
                 {% endfor %}
 			</div>
-            
-			<div class="col-md-10 bg-light border">
-				<h4 class="text-center">Column 2</h4>
-				CSS or Cascading Style Sheets is a stylesheet
-				language used to add styles to the HTML document.
-				It describes how HTML elements should be
-				displayed on the web page
+
+			<div class="col-md-11 bg-light border">
+                <div id="full-graphic-container">
+                    <img src="" alt="Full Graphic" id="full-graphic" class="full-graphic" />
+                </div>
 			</div>
 		</div>
 	</div>
@@ -88,6 +85,19 @@
 
     {% endif %}
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script>
+        function showImage(event) {
+            event.preventDefault();
+            const imageSrc = event.target.getAttribute('data-image');
+            const fullGraphic = document.getElementById('full-graphic');
+            fullGraphic.src = imageSrc;
+            fullGraphic.style.display = 'block'; // Show the image
+        }
+    </script>
 
 </body>
 

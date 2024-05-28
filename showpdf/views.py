@@ -16,8 +16,8 @@ def convert_page_one(request):
     for i in range(len(dir_list)):
         found_files.append(os.path.join(docs_path, dir_list[i]))
 
+    converted_image_list = []
     for i in range(len(dir_list)):
-        converted_image_list = []
         images = convert_from_path(found_files[i])
         no_extension = dir_list[i].split(".")[0]
         random_num = random.randrange(10, 900, 3)
