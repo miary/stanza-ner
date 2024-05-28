@@ -66,7 +66,9 @@
 		<div class="row">
 			<div class="col-md-1 bg-light border">
                 {% for item in data %} 
-                    <p><a href="#" class="thumbnail-preview" data-image="/media/tmp/{{ item }}" width="110px" onclick="showImage(event)">{{ item }}</a></p>
+                    <p><a href="#" class="thumbnail-preview" data-image="/media/tmp/{{ item }}" onclick="showImage(event)">
+                        #
+                    </a><img src="/media/tmp/{{ item }}" width="110px" alt="thumbs" id="thumbs" /></p>
                 {% endfor %}
 			</div>
 
