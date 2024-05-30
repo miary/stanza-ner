@@ -1,6 +1,9 @@
-stanza
-django
-python-dotenv
-pdf2image
+stanza==1.8.2
+django==5.0.6
+django-unicorn==0.60.0
+python-dotenv==1.0.1
+pdf2image==1.17.0
 
-# Run once if needed: stanza.download('en') # download English model
+# To download English model, run once if needed: stanza.download('en')
+pymupdf==1.24.4
+transformers

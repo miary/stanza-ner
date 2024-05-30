@@ -10,3 +10,8 @@
 - Python manage.py migrate
 - Python manage.py runserver
 - Go to http:\\localhost:8000 to view homepage
+
+
+### Alternative Solutions
+- https://huggingface.co/bigcode/starpii
+- CommonRegex 
